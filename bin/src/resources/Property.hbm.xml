@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="compareprice.Hibernate.entity.Property" table="property">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="increment"/>
+    </id>
+     <property name="agentId" type="int">
+    <column name="agent_id"/>
+    </property>
+    <property name="imgLink" type="string">
+      <column name="img_link"/>
+    </property>
+    <property name="postcode" type="string">
+      <column name="postcode"/>
+    </property>
+    <property name="description" type="string">
+      <column name="description"/>
+    </property>
+    <property name="location" type="string">
+      <column name="location"/>
+    </property>
+    <property name="longitude" type="int">
+      <column name="longitude"/>
+    </property>
+    <property name="latitude" type="int">
+      <column name="latitude"/>
+    </property>
+    <property name="price" type="float">
+      <column name="price"/>
+    </property>
+    <property name="viewLink" type="string">
+      <column name="view_link"/>
+    </property>
+  </class>
+</hibernate-mapping>
